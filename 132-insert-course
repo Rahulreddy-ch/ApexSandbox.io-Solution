@@ -6,7 +6,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     course.apxio__Course_Details__c = details;
     course.apxio__Credits__c = String.valueOf(validCredits.contains(credits)? credits : null);
     
-   if (String.valueOf(validCredits.contains(credits)){
+   if (String.valueOf(validCredits.contains(credits))){
        insert course; 
    }
     return course.id;
