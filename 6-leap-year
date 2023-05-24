@@ -14,14 +14,14 @@ public Boolean isLeapYear(Integer year) {
     return false;
 }
 
-public Boolean isDivisibleBy4(Integer number){
- return (Math.mod(number, 4) == 0);
+public Boolean isDivisibleBy4(Integer year){
+ return (Math.Mod(year, 4) == 0);
 }
 
-public Boolean isDivisibleBy100(Integer number){
-    return (Math.mod(number, 100) == 0);
+public Boolean isDivisibleBy100(Integer year){
+    return (Math.Mod(year, 100) == 0);
 }
 
-public Boolean isDivisibleBy400(Integer number){
-    return (Math.mod(number, 400) == 0);
+public Boolean isDivisibleBy400(Integer year){
+    return (Math.mod(year, 400) == 0);
 }
