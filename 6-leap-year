@@ -15,13 +15,13 @@ public Boolean isLeapYear(Integer year) {
 }
 
 public Boolean isDivisibleBy4(Integer number){
- return (number%4 == 0);
+ return (Math.mod(number, 4) == 0);
 }
 
 public Boolean isDivisibleBy100(Integer number){
-    return (number%100 == 0);
+    return (Math.mod(number, 100) == 0);
 }
 
 public Boolean isDivisibleBy400(Integer number){
-    return (number%400 == 0);
+    return (Math.mod(number, 400) == 0);
 }
