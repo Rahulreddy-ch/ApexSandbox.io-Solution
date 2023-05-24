@@ -2,7 +2,7 @@ public Boolean companionPlants(String plant1, String plant2) {
     //code here
     if ((plant1 == 'lettuce' || plant2 == 'lettuce') && ((plant1 == 'cucumbers' || plant2 == 'cucumbers') || (plant1 == 'onions' || plant2 == 'onions')) ){
         return true;
-    } else if ((plant1 == 'onions' || plant2 == 'onions') && (plant1 == 'carrots' || plant2 == 'tomatoes') ){
+    } else if ((plant1 == 'onions' || plant2 == 'onions') && ((plant1 == 'carrots' || plant2 == 'carrots') || (plant1 == 'tomatoes' || plant2 == 'tomatoes')) ){
         return true;
     } else {
         return false;
