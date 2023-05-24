@@ -1,27 +1,14 @@
 public Boolean isLeapYear(Integer year) {
     //code here
-    if (isDivisibleBy4(year)){
-        if (isDivisibleBy100(year)) {
-           if (isDivisibleBy400(year) ){
-               return true;
-           } else {
-               return false;
-           }
-        } else{
-            return true;
+    if(isDivisible(year, 4)){
+        if(isDivisible(year, 100) && !(isDivisible(year, 400))){
+            return false;
         }
-    } 
+        return true;
+    }
     return false;
 }
 
-public Boolean isDivisibleBy4(Integer year){
- return (Math.Mod(year, 4) == 0);
-}
-
-public Boolean isDivisibleBy100(Integer year){
-    return (Math.Mod(year, 100) == 0);
-}
-
-public Boolean isDivisibleBy400(Integer year){
-    return (Math.mod(year, 400) == 0);
+public boolean isDivisible(Integer year, Integer divisor){
+    return (math.mod(year, divisor) == 0);
 }
