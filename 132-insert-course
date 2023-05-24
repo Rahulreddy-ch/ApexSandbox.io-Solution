@@ -1,0 +1,10 @@
+public Id insertCourse(String name, String details, Integer credits) {
+    // code here
+    List<Integer> validCredits = new List<Integer>{'1','2','3','4'};
+    apxio__Course__c course = new apxio__Course__c();
+    course.name = name;
+    course.apxio__Course_Details__c = details;
+    course.apxio__Credits__c = validCredits.contains(credits)? credits : null;
+    insert course;
+    return course.id;
+}
