@@ -1,0 +1,6 @@
+public String nameFromEmail(String email) {
+    //code here
+    String name = '';
+    List<String> listOfNames = email.substringBefore('@').split('.');
+    return name = listOfNames[0] + listOfNames[1];
+}
