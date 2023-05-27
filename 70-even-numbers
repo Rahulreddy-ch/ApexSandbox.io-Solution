@@ -4,6 +4,7 @@ public List<Integer> evenNumbers(Integer n) {
     Integer prevNumber = 0;
     while (n > 0){
         evenNumbers.add(prevNumber+2);
+        prevNumber += 2;
         n--;
     }
     return evenNumbers;
