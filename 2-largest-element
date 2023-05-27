@@ -1,0 +1,10 @@
+public static Integer findLargest(List<Integer> nums) {
+	//code here
+    Integer largestNumber;
+    for (Integer currentNum : nums){
+        if (currentNum == null || currentNum >  largestNumber){
+            largestNumber = currentNum;
+        } 
+    }
+    return largestNumber;
+}
