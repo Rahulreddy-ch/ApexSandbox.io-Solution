@@ -7,8 +7,8 @@ public Integer nextPrime(Integer num) {
     }
 }
 
-public void isPrime(Integer num){
-    isPrime = false;
+public Boolean isPrime(Integer num){
+    Boolean isPrime = false;
     for (Integer i = 2; i < num ; i++){
         if(Math.mod(num, i) != 0){
             isPrime = true;
