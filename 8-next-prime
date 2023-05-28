@@ -1,10 +1,12 @@
 public Integer nextPrime(Integer num) {
     //code here
+    Integer nextPrime;
     for (integer i = num + 1; i > num ; i++){
         if (isPrime(i)){
-            return i;
+            nextPrime = i;
         }
     }
+    return nextPrime;
 }
 
 public Boolean isPrime(Integer num){
