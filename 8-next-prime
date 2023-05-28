@@ -4,6 +4,7 @@ public Integer nextPrime(Integer num) {
     for (integer i = num + 1; i > num ; i++){
         if (isPrime(i)){
             nextPrime = i;
+            return nextPrime;
         }
     }
     return nextPrime;
